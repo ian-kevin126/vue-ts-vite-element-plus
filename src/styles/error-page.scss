@@ -1,0 +1,37 @@
+.error-page {
+  &-wrapper {
+    display: flex;
+    padding: 100px;
+  }
+  &-content {
+    flex: 0 0 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: $base-font-size-h1;
+      color: $base-color-primary;
+      margin-bottom: $base-margin-20;
+      font-weight: bold;
+    }
+    .desc {
+      font-size: 18px;
+      color: $base-color-black;
+      margin-bottom: $base-margin-20;
+    }
+    .remark {
+      width: 300px;
+      font-size: 14px;
+      color: $base-color-3;
+      margin-bottom: $base-margin-20;
+    }
+  }
+  &-image {
+    flex: 1;
+    .el-image {
+      width: 600px;
+      height: 450px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use 'sass:math';
+@use 'sass:map';
+$base-color-primary: #7a72ff;
+$--colors: () !default;
+$--colors: map.set($--colors, 'primary', 'base', $base-color-primary);
+
+/* 主题颜色 */
+$--font-path: 'node_modules/element-plus/lib/theme-chalk/fonts';
+@use 'node_modules/element-plus/packages/theme-chalk/src/index';

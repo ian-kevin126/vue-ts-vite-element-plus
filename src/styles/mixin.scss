@@ -1,0 +1,39 @@
+@mixin scrollbar {
+  margin-bottom: 0.5vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(144, 147, 153, 0.3);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    // background-color: rgba(144, 147, 153, 0.3);
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin inputfield {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}

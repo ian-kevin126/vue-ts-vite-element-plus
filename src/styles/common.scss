@@ -1,0 +1,48 @@
+// @import './mixin.scss';
+// @import './variables.scss';
+.icon-hover {
+  cursor: pointer;
+  &:hover {
+    background-color: $base-hover-color;
+  }
+}
+
+.i-icon:focus-visible {
+  border: none !important;
+  outline: none !important;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.flexcenter {
+  @include flexcenter;
+}
+
+.flex {
+  display: flex;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.table-base {
+  .table-base-header-handler {
+    .el-form-item {
+      margin-bottom: 0;
+    }
+  }
+  .input-base {
+    @include inputfield;
+  }
+}
+
+.el-dialog {
+  .el-form-item {
+    .el-select {
+      width: 100% !important;
+    }
+  }
+}
